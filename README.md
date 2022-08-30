@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="../design/complete-state-desktop.jpg" />
+https://raw.githubusercontent.com/felipeVerger/card-details/main/assets/complete-state-desktop.jpg
 
 ## My process
 
