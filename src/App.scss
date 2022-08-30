@@ -1,0 +1,165 @@
+$active-input: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+$input-error: hsl(0, 100%, 66%);
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(270, 3%, 87%);
+$dark-grayish: hsl(279, 6%, 55%);
+$very-dark-violet: hsl(278, 68%, 11%);
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+$font-base: 'Space Grotesk', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app__container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: $light-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 958px) {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.app__cards-container {
+    position: relative;
+    width: 100%;
+
+    .background {
+        z-index: 0;
+    }
+
+    .front-card-block {
+        position: absolute;
+        left: 180px;
+        top: 160px;
+
+        p {
+            position: absolute;
+            bottom: 80px;
+            left: 45px;
+            font-family: $font-base;
+            color: $white;
+            font-size: 2em;
+        }
+
+        .name {
+            position: absolute;
+            left: 45px;
+            bottom: 25px;
+            font-family: $font-base;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .expire-date {
+            position: absolute;
+            right: 45px;
+            bottom: 25px;
+            font-family: $font-base;
+            color: $white;
+            letter-spacing: 2px;
+        }
+    }
+
+    .back-card-block {
+        position: absolute;
+        left: 270px;
+        bottom: 200px;
+
+        span {
+            position: absolute;
+            right: 55px;
+            top: 112px;
+            font-family: $font-base;
+            color: $white;
+            font-size: 1em;
+        }
+    }
+}
+
+.app__form-container {
+    width: 100%;
+
+    form {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        font-family: $font-base;
+        color: $very-dark-violet;
+        font-size: 1.3em;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 0.2rem;
+
+            input {
+                width: 100%;
+                height: 50px;
+                border: 1px solid $dark-grayish;
+                border-radius: 10px;
+                color: $dark-grayish;
+                text-indent: 15px;
+                font-family: $font-base;
+                font-size: 16px;
+                outline: none;
+            }
+
+            .active-error {
+                border: 1px solid $input-error;
+            }
+
+            .error {
+                color: $input-error;
+            }
+        }
+
+        .security-block {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1.3rem;
+
+            .exp-date-label {
+                width: 100%;
+                .exp-date-inputs {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+            height: 60px;
+            border: none;
+            border-radius: 10px;
+            background-color: $very-dark-violet;
+            color: $white;
+            font-family: $font-base;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 1500px) {
+        width: 70%;
+    }
+}

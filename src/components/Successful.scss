@@ -1,0 +1,43 @@
+$font-base: 'Space Grotesk', sans-serif;
+$very-dark-violet: hsl(278, 68%, 11%);
+$dark-grayish: hsl(279, 6%, 55%);
+
+.successful-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+        width: 150px;
+        object-fit: contain;
+    }
+
+    h1 {
+        font-family: $font-base;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        color: $very-dark-violet;
+    }
+
+    p {
+        font-family: $font-base;
+        font-size: 1.2em;
+        color: $dark-grayish;
+    }
+
+    button {
+        width: 70%;
+        height: 50px;
+        background-color: $very-dark-violet;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-family: $font-base;
+        font-size: 1.3em;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+}
