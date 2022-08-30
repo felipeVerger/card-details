@@ -32,7 +32,6 @@ Users should be able to:
 
 ### Screenshot
 
-(https://github.com/felipeVerger/card-details/blob/main/src/assets/complete-state-desktop.jpg)
 <img src="https://github.com/felipeVerger/card-details/blob/main/src/assets/complete-state-desktop.jpg"/>
 
 ## My process
