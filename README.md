@@ -19,6 +19,10 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 ## Overview
 
+### Deployed version
+
+https://felipeverger.github.io/card-details/
+
 ### The challenge
 
 Users should be able to:
