@@ -48,7 +48,9 @@ const App = () => {
             errors.exp_date = 'Expiration date is required';
         } else if (/^(0[1-9]|1[0-2])\/?([0-9]{2})$/.test(date)) {
             errors.exp_date = 'Expiration date is not valid';
-        } else if (formData.exp_date_mm < 2 && formData.exp_date_yy < 2) {
+        } else if (formData.exp_date_mm < 2) {
+            errors.exp_date = 'Expiration date must have two digits, ex: 01/22';
+        } else if (formData.exp_date_yy < 2) {
             errors.exp_date = 'Expiration date must have two digits, ex: 01/22';
         }
 
@@ -57,9 +59,9 @@ const App = () => {
         } else if (formData.cvc < 3) {
             errors.cvc = 'CVC must be 3 digits long';        
         }
-
+        return errors;
     }
-    validations();
+    setErrors(validations());
     if (Object.keys(errors).length === 0) {
         setIsSubmitted(true)
     }
