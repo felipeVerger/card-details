@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/card-details/static/css/main.408321e9.css",
+    "main.js": "/card-details/static/js/main.fc40b0ed.js",
+    "static/media/bg-main-desktop.png": "/card-details/static/media/bg-main-desktop.806e7aa7b4dbc1d78bc3.png",
+    "static/media/bg-card-back.png": "/card-details/static/media/bg-card-back.23f68fa3aa3d5b33dfc8.png",
+    "static/media/bg-card-front.png": "/card-details/static/media/bg-card-front.8153e2ca184402a8385f.png",
+    "index.html": "/card-details/index.html",
+    "main.408321e9.css.map": "/card-details/static/css/main.408321e9.css.map",
+    "main.fc40b0ed.js.map": "/card-details/static/js/main.fc40b0ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.408321e9.css",
+    "static/js/main.fc40b0ed.js"
+  ]
+}
